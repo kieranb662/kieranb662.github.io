@@ -1,4 +1,4 @@
-name: Kieran
+title: Kieran's Components
 markdown: CommonMark
 permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-midnight
