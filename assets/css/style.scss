@@ -5,6 +5,13 @@
 body {
 background-color: #1d1a1e;
  }
+ nav {
+ background-color: #4f4852;
+ }
+ nav li.mynavigation {
+  background-color: #79c45e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
 div.language-swift {
   background-color: #2a252b;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
