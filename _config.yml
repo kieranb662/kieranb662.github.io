@@ -1,4 +1,5 @@
 title: Kieran's Components
+description: Explore the world of UI 
 markdown: CommonMark
 permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-midnight
