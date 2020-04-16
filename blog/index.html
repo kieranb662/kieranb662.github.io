@@ -4,14 +4,16 @@ title: Kieran's Blog
 ---
 	<h1>{{ page.title }}</h1>
 	<br>
-	<br>
+
 
 	{% for post in site.posts %}
 	<h2 align="left">
 	<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 </h2>
+<p>
 {{ post.date | date_to_string }}
-<br>
+</p>
+
 		<p align="center">
 <a href="{{ post.url }}" title="{{ post.title }}"><img class="post-icon" src="{{post.logo}}" height=100></a>
 

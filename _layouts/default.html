@@ -27,13 +27,14 @@
 
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="mynavigation"><a href="https://kieranb662.github.io">Home</a></li>
-          <li class="mynavigation"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          <li class="mynavigation"><a href="/blog">Blog</a></li>
-        </nav>
-      </div><!-- end header -->
+    <div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="https://kieranb662.github.io">Home</a>
+    <a href="https://github.com/kieranb662/kieranb662.github.io">View On GitHub</a>
+    <a href="/blog">Blog</a>
+  </div>
+</div>
 
     <div class="wrapper">
 
@@ -42,7 +43,7 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+          
         </div>
 
         {{ content }}

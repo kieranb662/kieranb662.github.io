@@ -1,30 +1,230 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+$primary: #BB86FC;
+$variant: #3700B3;
+$secondary: #03DAC6;
+$background: #171717;
+$surface: #242424;
+$error: #CF6679;
+$on-primary: #000000;
+$on-secondary: #000000;
+$on-error: #000000;
+$on-background: #e0e0e0;
+$on-surface: #FFFFFF;
+
+img.project-logo {
+  width: 100%;
+  height: auto;
+}
+img.tutorial {
+width: 100%;
+height: auto;
+max-width: 400px;
+}
+
+video {
+width: 100%;
+height: auto;
+max-width: 400px;
+}
+
+
 body {
-background-color: #1d1a1e;
+margin-left: auto;
+margin-right: auto;
+background-color: $background;
+color: $on-background;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
  }
- nav {
- background-color: #4f4852;
- }
- nav li.mynavigation {
-  background-color: #79c45e;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
+
+a {
+color: $secondary
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: $surface;
+  padding: 20px 10px;
+}
+
+
+.header a {
+  float: left;
+  color:  $on-surface;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: $primary;
+  color: $on-primary;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+
+ pre {
+ font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+ clear: both;
+ color:  #fff;
+ background: $surface;
+ padding: 0;
+ -moz-tab-size: 2;
+ -o-tab-size: 2;
+ tab-size: 2;
+ -ms-word-break: normal;
+ word-break: normal;
+ -webkit-hyphens: none;
+ -ms-hyphens: none;
+ hyphens: none;
+ position: relative;
+ line-height: 28px;
+ border-radius: 8px;
+ min-width: 100px;
+ max-width: 100%;
+ overflow: hidden
+}
+pre[rel]:not([rel=""]):before {
+ font-family: Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+ font-style: normal;
+ font-weight: 700;
+ font-size: .5rem;
+ content: attr(rel);
+ color: #fff;
+ position: absolute;
+ top: -.2rem;
+ right: .4rem;
+ padding: 0;
+ color: #ff8a00!important
+}
+pre code {
+ scrollbar-color: #666;
+ scrollbar-width: .5em;
+ background: $surface;
+
+padding: 15px 20px 12px 22px;
+ white-space: pre;
+ -webkit-overflow-scrolling: touch;
+ display: block;
+ overflow-x: scroll;
+ max-width: 100%;
+ min-width: 100px;
+ font-size: 16px;
+ line-height: 1.75
+}
+pre code::-webkit-scrollbar {
+ width: .5em;
+ height: .5em;
+}
+pre code::-webkit-scrollbar-thumb {
+ background: 0 0;
+ border-radius: .5em;
+ box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+}
+pre code::-webkit-scrollbar-track {
+ background: linear-gradient(90deg,#201c29,#201c29 1px,none 0,none);
+}
+code {
+ font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+}
+
+li {
+margin-left: 50px;
+}
+
+
 div.language-swift {
-  background-color: #2a252b;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
  }
+
  img.post-icon {
- padding: 10px;
  border: 1px solid #dad3db;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
-ul {
-  list-style-image: url("/assets/Circle.png");
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double $secondary;
+    color: #333;
+    text-align: center;
 }
+
+#title {
+ h1 {
+ text-align: center;
+ font-size: 6vw;
+  color: $on-background;
+ }
+}
+
+#title {
+ p {
+ text-align: center;
+  color:  $on-background;
+ }
+}
+p.meta {
+float: right;
+}
+
+p {
+margin-left: 30px;
+margin-right: 30px;
+}
+h1.page-title {
+display: inline;
+}
+
+h1 {
+font-size: 30px;
+margin-left: 10px;
+}
+
+h2 {
+margin-left: 20px;
+}
+
+h3 {
+margin-left: 20px;
+}
+
+
 
 .highlight pre { background: color(var(--darkgrey) l(-3%)); }
 .highlight .hll { background: color(var(--darkgrey) l(-3%)); }
