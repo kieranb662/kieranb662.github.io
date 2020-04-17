@@ -54,7 +54,7 @@ color: $secondary
   float: right;
   color:  $on-surface;
   text-align: center;
-  padding: 0px 10px 0px;
+  padding: 10px 10px 10px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
@@ -170,11 +170,17 @@ padding: 10px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
  }
 
+a.post-icon {
+display: block;
+width: 100%;
+height: auto;
+max-width: 300px;
 
+}
  img.post-icon {
- width: 100%;
- height: auto;
- max-width: 300px;
+
+width: 100%;
+
  border: 1px solid #dad3db;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
