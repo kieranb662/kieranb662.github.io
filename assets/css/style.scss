@@ -190,7 +190,7 @@ div.icon-container {
 display: block;
 margin-left: auto;
 margin-right: auto;
-max-width: 300px;
+max-width: 200px;
 clear: both;
 
 }
@@ -201,7 +201,7 @@ clear: both;
 
 height: auto;
 width: 100%;
- border: 1px solid #dad3db;
+  border: 1px solid $secondary;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
