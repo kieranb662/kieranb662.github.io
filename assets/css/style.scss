@@ -95,9 +95,6 @@ a.header:hover {
 
 
 
-
-
-
  pre {
  font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
  clear: both;
@@ -167,6 +164,14 @@ li {
 margin-left: 50px;
 }
 
+ul {
+ ol {
+  li {
+  margin-left: 10px;
+  }
+ }
+}
+
 
 div.language-swift {
 padding: 10px;
@@ -176,18 +181,26 @@ padding: 10px;
   max-width: 600px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
  }
+ div.post-container {
+ display: block;
+ }
 
-a.post-icon {
+div.icon-container {
+
 display: block;
-width: 100%;
-height: auto;
+margin-left: auto;
+margin-right: auto;
 max-width: 300px;
+clear: both;
 
 }
+
+
  img.post-icon {
 
-width: 100%;
 
+height: auto;
+width: 100%;
  border: 1px solid #dad3db;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -225,6 +238,8 @@ margin-right: 30px;
 }
 h1.page-title {
 display: inline;
+font-size: 4vw;
+float: left;
 }
 
 
@@ -234,7 +249,7 @@ margin-left: 10px;
 }
 
 h2.post-title {
-display: inline;
+float: left
 }
 
 h2 a {

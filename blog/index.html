@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kieran's Blog
-description: Quickly learn how to implement complex effects in SwiftUI.  
+description: Quickly learn how to implement complex effects in SwiftUI.
 logo: favicon.png
 ---
 	<h1>{{ page.title }}</h1>
@@ -9,18 +9,17 @@ logo: favicon.png
 
 
 	{% for post in site.posts %}
-	<h2 class="post-title" align="left">
-	<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-</h2>
-<p class="meta">{{ post.date | date_to_string }}</p>
-<br>
+	<div class="post-container">
+		<h2 class="post-title">
+		<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+	</h2>
+	<p class="meta">{{ post.date | date_to_string }}</p>
+	</div>
 
-<p align="center"
 
-		<a class="post-icon" href="{{ post.url }}" title="{{ post.title }}">
-			<img class="post-icon" src="{{post.logo}}">
-		</a>
+<div class="icon-container">
 
-</p>
+<img class="post-icon" src="{{post.logo}}">
+</div>
 
 	{% endfor %}
