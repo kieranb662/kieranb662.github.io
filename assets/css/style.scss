@@ -35,7 +35,7 @@ margin-left: auto;
 margin-right: auto;
 background-color: $background;
 color: $on-background;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-family: Verdana, Geneva, sans-serif
  }
 
 a {
@@ -46,28 +46,36 @@ color: $secondary
 .header {
   overflow: hidden;
   background-color: $surface;
-  padding: 20px 10px;
+  padding: 0px 10px 0px;
 }
 
 
-.header a {
+ a.header {
   float: left;
   color:  $on-surface;
   text-align: center;
-  padding: 12px;
+  padding: 0px 10px 0px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+
+a.logo {
+float: left;
+color:  $on-surface;
+text-align: center;
+
+text-decoration: none;
+
+height: 50px;
 }
-
-
-.header a:hover {
+img.logo {
+height: 100%;
+background-color: $surface;
+}
+a.header:hover {
   background-color: $primary;
   color: $on-primary;
 }
@@ -171,7 +179,11 @@ padding: 10px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
  }
 
+
  img.post-icon {
+ width: 100%;
+ height: auto;
+ max-width: 300px;
  border: 1px solid #dad3db;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -211,9 +223,18 @@ h1.page-title {
 display: inline;
 }
 
+
 h1 {
 font-size: 30px;
 margin-left: 10px;
+}
+
+h2.post-title {
+display: inline;
+}
+
+h2 a {
+color: $primary;
 }
 
 h2 {

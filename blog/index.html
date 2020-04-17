@@ -7,15 +7,18 @@ title: Kieran's Blog
 
 
 	{% for post in site.posts %}
-	<h2 align="left">
+	<h2 class="post-title" align="left">
 	<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 </h2>
-<p>
-{{ post.date | date_to_string }}
+<p class="meta">{{ post.date | date_to_string }}</p>
+<br>
+
+<p align="center"
+
+		<a href="{{ post.url }}" title="{{ post.title }}">
+			<img class="post-icon" src="{{post.logo}}">
+		</a>
+
 </p>
 
-		<p align="center">
-<a href="{{ post.url }}" title="{{ post.title }}"><img class="post-icon" src="{{post.logo}}" height=100></a>
-
-		 </p>
 	{% endfor %}
