@@ -128,7 +128,7 @@ var body: some View {
 ```
 
 
-Running the simulator should display show you a button like this:
+Running the simulator should show a button like this:
 
 <p align="center">
 <img class="tutorial" src="/assets/ReactiveButton/MyButton.gif">
@@ -136,4 +136,4 @@ Running the simulator should display show you a button like this:
 
 ## Link To Full Button Code
 
-[ReactiveButton](https://gist.github.com/kieranb662/f2b7f3cba82c8e92280b368398a240b1) comes with full custom styling capabilities. It's a `MyButton` on steroids! 
+[ReactiveButton](https://gist.github.com/kieranb662/f2b7f3cba82c8e92280b368398a240b1) comes with full custom styling capabilities. It's a `MyButton` on steroids!
