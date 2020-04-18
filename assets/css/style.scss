@@ -39,7 +39,7 @@ img.project-logo {
 }
 
 div.resource {
-
+padding: 30px;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -47,6 +47,7 @@ clear: both;
 max-width: 700px;
 }
 img.resource {
+
 width: 100%;
 height: auto;
 
@@ -271,9 +272,13 @@ hr.single {
 
 #title {
  h1 {
+
  text-align: center;
  font-size: 6vw;
-  color: $on-background;
+  background: linear-gradient( #027B76 , #18E7CF);
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
  }
 }
 
