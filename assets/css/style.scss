@@ -218,6 +218,26 @@ margin-right: auto;
 max-width: 200px;
 clear: both;
 
+
+}
+div.large-icon {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 400px;
+clear: both;
+
+}
+
+img.large-icon {
+
+padding: 0px 20px;
+height: auto;
+width: 100%;
+border: 1px solid $secondary;
+border-radius: 0.5em;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -226,7 +246,7 @@ clear: both;
 
 height: auto;
 width: 100%;
-  border: 1px solid $secondary;
+border: 1px solid $secondary;
 border-radius: 0.5em;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
