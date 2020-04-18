@@ -13,15 +13,43 @@ $on-error: #000000;
 $on-background: #e0e0e0;
 $on-surface: #FFFFFF;
 
+div.project-logo {
+padding: 30px 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+clear: both;
+max-width: 700px;
+ p {
+ margin-left: 0px;
+ margin-right: 0px;
+font-family: Arial, Helvetica, sans-serif;
+ }
+ li {
+  margin-left: 10px;
+
+ }
+}
+
+
 img.project-logo {
+
   width: 100%;
   height: auto;
+}
+
+div.resource {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+clear: both;
+max-width: 700px;
 }
 img.resource {
 width: 100%;
 height: auto;
-max-width: 600px;
-display: block
+
 }
 
 img.tutorial {
@@ -42,7 +70,7 @@ margin-left: auto;
 margin-right: auto;
 background-color: $background;
 color: $on-background;
-font-family: Verdana, Geneva, sans-serif
+font-family: Arial, Helvetica, sans-serif;
  }
 
 a {
@@ -72,10 +100,7 @@ color: $secondary
 a.logo {
 float: left;
 color:  $on-surface;
-
-
 text-decoration: none;
-
 height: 50px;
 }
 img.logo {
@@ -178,7 +203,7 @@ padding: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 800px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
  }
  div.post-container {
@@ -210,6 +235,16 @@ hr {
     padding: 0;
     border: none;
     border-top: medium double $secondary;
+    color: #333;
+    text-align: center;
+}
+
+hr.single {
+    padding: 0;
+    border: none;
+    border-top: 1px solid $secondary;
+    margin-right: 10px;
+    margin-left: 10px;
     color: #333;
     text-align: center;
 }

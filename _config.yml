@@ -3,3 +3,5 @@ description: Explore the world of UI
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-midnight
+plugins:
+  - jekyll-sitemap
