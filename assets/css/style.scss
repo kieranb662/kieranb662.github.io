@@ -118,6 +118,7 @@ a.header:hover {
 }
 
 .footer-left {
+display: block;
 float: left;
 }
 .footer-right {
@@ -132,7 +133,8 @@ clear: both;
 max-width: 250px;
 }
 img.follow {
-width: 100%;
+display: block;
+width: 250px;
 height: auto;
 }
 
