@@ -32,7 +32,7 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include mathjax.html %}
-
+<script src="https://apis.google.com/js/platform.js"></script>
   </head>
   <body>
     <div class="header">
@@ -72,10 +72,13 @@
     {% endif %}
   </body>
   <footer>
-    <p align="center" >
+<div class="footer">
     <a href="https://github.com/kieranb662" >
-    <img src="/assets/Rainbow/FollowButton.gif" height="100" >
+    <img class="follow" src="/assets/Rainbow/FollowButton.gif" >
     </a>
-    </p>
+<br>
+
+<div class="g-ytsubscribe" data-channelid="UCcy2fpJrbdLhiC5UlN6m8Kw" data-layout="default" data-theme="dark" data-count="hidden"></div>
+</div>
   </footer>
 </html>
