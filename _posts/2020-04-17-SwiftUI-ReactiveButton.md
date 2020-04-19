@@ -9,7 +9,9 @@ logo: /assets/ReactiveButton/flashlightSmall.gif
 <img class="post-icon" src="/assets/ReactiveButton/FlashlightExample.gif">
 </div>
 
-Today we will be working through creating our very own SwiftUI style Button. How to reproduce the button behavior has been sought after since the release of SwiftUI almost a year ago. **Disclaimer**: This is the way I found to recreate the behavior, I don't and probably will never know how Apple made their button.
+Today we will be working through creating our very own SwiftUI style Button. How to reproduce the button behavior has been sought after since the release of SwiftUI almost a year ago.
+
+**Disclaimer**: This is the way I found to recreate the behavior, I don't and probably will never know how Apple made their button.
 
 After creating the initial logic for the button I will also provide the code for how to make custom styles. I will *not* be covering custom styling because it has already been perfectly covered [here](https://swiftui-lab.com/custom-styling/).
 
@@ -131,9 +133,9 @@ var body: some View {
 
 Running the simulator should show a button like this:
 
-<p align="center">
+<div class="tutorial-image">
 <img class="tutorial" src="/assets/ReactiveButton/MyButton.gif">
-</p>
+</div>
 
 ## Link To Full Button Code
 

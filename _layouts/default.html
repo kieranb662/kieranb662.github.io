@@ -37,42 +37,44 @@
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   </head>
   <body>
-    <div class="header">
-  <a href="#default" class="logo"><img class="logo" src="/assets/KieransComponentsLogo.png"></a>
-  <div class="header-right">
-    <a class="header" href="https://kieranb662.github.io">Home</a>
-    <a class="header" href="https://github.com/kieranb662">GitHub</a>
-    <a class="header" href="/blog">Blog</a>
-  </div>
-</div>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">&#9776;</label>
+    <header>
+    <div id="brnad"><img alt="Kieran's Components Logo" src="/assets/KieransComponentsLogo.png"></div>
+    </header>
+    <nav class="menu">
+    <ul>
+        <li class="menu-item"><a href="/index.html">HOME</a></li>
+            <li class="menu-item"><a href="/blog">BLOG</a></li>
+            <li class="menu-item"><a href="https://github.com/kieranb662">GITHUB</a></li>
+        </ul>
+    </nav>
+    <div class="content">
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-
-        </div>
+      <div id="title">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <hr>
+      </div>
 
         {{ content }}
 
-      </section>
 
+
+        <footer>
+        <div class="footer">
+        <a href="https://linkedin.com/in/kieran-brown-56a0a31a3">
+          <img class="follow" src="/assets/LI-Logo.png">
+          <a>
+          <a href="https://github.com/kieranb662" >
+          <img class="follow" src="/assets/followButtonSmall.gif" >
+          </a>
+        <div class="g-ytsubscribe" data-channelid="UCcy2fpJrbdLhiC5UlN6m8Kw" data-layout="default" data-theme="dark" data-count="hidden"></div>
+
+        </div>
+        </footer>
     </div>
 
   </body>
-  <footer>
-<div class="footer">
-  <a href="https://linkedin.com/in/kieran-brown-56a0a31a3">
-    <img class="follow" src="/assets/LI-Logo.png">
-    <a>
-    <a href="https://github.com/kieranb662" >
-    <img class="follow" src="/assets/followButtonSmall.gif" >
-    </a>
-<div class="g-ytsubscribe" data-channelid="UCcy2fpJrbdLhiC5UlN6m8Kw" data-layout="default" data-theme="dark" data-count="hidden"></div>
 
-</div>
-  </footer>
 </html>
