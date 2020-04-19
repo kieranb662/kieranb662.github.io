@@ -1,7 +1,8 @@
 ---
 title: Reproducing SwiftUI's Button Behavior
 description: Learn how to create the logic and style behind SwiftUI's Button.
-logo: /assets/ReactiveButton/FlashlightExample.gif
+keywords: Swift,SwiftUI,UX,Design,buttons,button
+logo: /assets/ReactiveButton/flashlightSmall.gif
 ---
 
 <div class="icon-container">

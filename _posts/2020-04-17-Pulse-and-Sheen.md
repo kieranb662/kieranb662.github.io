@@ -1,6 +1,7 @@
 ---
 title: Pulse and Sheen
 description: Learn how to make your SwiftUI buttons irresistible with the pulse and sheen effects.
+keywords: Swift,SwiftUI,UX,Design,buttons,pulse,sheen
 logo: /assets/PulseSheen/PulseSheen.gif
 mathjax: true
 ---
