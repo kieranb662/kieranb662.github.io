@@ -5,75 +5,90 @@ description: Learn how to make one of a kind user experiences with Kieran's Comp
 keywords: Swift,SwiftUI,UX,Design
 logo: favicon.png
 ---
+<script type="text/javascript" src="/js/jssor.slider.mini11.js"></script>
+<script>
+		jQuery(document).ready(function ($) {
+
+				var jssor_1_SlideshowTransitions = [
+					{$Duration:1200,$Zoom:11,$Rotate:-1,$Easing:{$Zoom:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Round:{$Rotate:0.5},$Brother:{$Duration:1200,$Zoom:1,$Rotate:1,$Easing:$Jease$.$Swing,$Opacity:2,$Round:{$Rotate:0.5},$Shift:90}},
+					{$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}},
+					{$Duration:1200,$Zoom:11,$Rotate:1,$Easing:{$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Round:{$Rotate:1},$ZIndex:-10,$Brother:{$Duration:1200,$Zoom:11,$Rotate:-1,$Easing:{$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Round:{$Rotate:1},$ZIndex:-10,$Shift:600}},
+					{$Duration:1500,x:0.5,$Cols:2,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InOutCubic},$Opacity:2,$Brother:{$Duration:1500,$Opacity:2}},
+					{$Duration:1500,x:-0.3,y:0.5,$Zoom:1,$Rotate:0.1,$During:{$Left:[0.6,0.4],$Top:[0.6,0.4],$Rotate:[0.6,0.4],$Zoom:[0.6,0.4]},$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:1000,$Zoom:11,$Rotate:-0.5,$Easing:{$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Shift:200}},
+					{$Duration:1500,$Zoom:11,$Rotate:0.5,$During:{$Left:[0.4,0.6],$Top:[0.4,0.6],$Rotate:[0.4,0.6],$Zoom:[0.4,0.6]},$Easing:{$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:1000,$Zoom:1,$Rotate:-0.5,$Easing:{$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Shift:200}},
+					{$Duration:1500,x:0.3,$During:{$Left:[0.6,0.4]},$Easing:{$Left:$Jease$.$InQuad,$Opacity:$Jease$.$Linear},$Opacity:2,$Outside:true,$Brother:{$Duration:1000,x:-0.3,$Easing:{$Left:$Jease$.$InQuad,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1200,x:0.25,y:0.5,$Rotate:-0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:1200,x:-0.1,y:-0.7,$Rotate:0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2}},
+					{$Duration:1600,x:1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1600,x:-1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1600,x:1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1600,x:-1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1600,y:-1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1600,y:1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1200,y:1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1200,y:-1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1200,x:1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1200,x:-1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+					{$Duration:1200,y:-1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1200,y:-1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$ZIndex:-10,$Shift:-100}},
+					{$Duration:1200,x:1,$Delay:40,$Cols:6,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1200,x:1,$Delay:40,$Cols:6,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$ZIndex:-10,$Shift:-100}},
+					{$Duration:1500,x:-0.1,y:-0.7,$Rotate:0.1,$During:{$Left:[0.6,0.4],$Top:[0.6,0.4],$Rotate:[0.6,0.4]},$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:1000,x:0.2,y:0.5,$Rotate:-0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2}},
+					{$Duration:1600,x:-0.2,$Delay:40,$Cols:12,$During:{$Left:[0.4,0.6]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5},$Brother:{$Duration:1000,x:0.2,$Delay:40,$Cols:12,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:1028,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Round:{$Top:0.5}}}
+				];
+
+				var jssor_1_options = {
+					$AutoPlay: true,
+					$FillMode: 5,
+					$SlideshowOptions: {
+						$Class: $JssorSlideshowRunner$,
+						$Transitions: jssor_1_SlideshowTransitions,
+						$TransitionsOrder: 1
+					},
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$
+					}
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				//responsive code begin
+				//you can remove responsive code if you don't want the slider scales while window resizing
+				function ScaleSlider() {
+						var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+						if (refSize) {
+								refSize = Math.min(refSize, 600);
+								jssor_1_slider.$ScaleWidth(refSize);
+						}
+						else {
+								window.setTimeout(ScaleSlider, 30);
+						}
+				}
+				ScaleSlider();
+				$(window).bind("load", ScaleSlider);
+				$(window).bind("resize", ScaleSlider);
+				$(window).bind("orientationchange", ScaleSlider);
+				//responsive code end
+		});
+</script>
 <div>
 	<section>
 
+		<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 250px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 250px; overflow: hidden;">
+{% for project in site.projects %}
+						<div style="display: none;">
+							<a href="{{ project.reference }}">
+                <img alt="{{project.title}}" data-u="image" src="{{ project.logo }}" />
+								</a>
+            </div>
+{% endfor %}
 
-	<h1>Projects</h1>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb13" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:21px;height:21px;"></div>
+        </div>
+    </div>
 
-
-<div class="project-logo">
-		<a href="https://github.com/kieranb662/bez">
-		<img class="project-logo" src="Logos/bezLogo.svg" alt="bez logo" >
-		</a>
-
-		<p>
-		<a href="https://github.com/kieranb662/bez">bez</a> is a swift package aimed at making Bézier curves easy to work with and manipulate. Comes packed with:
-
-</p>
-<ul>
-	<li>Interpolation Functions</li>
-	<li>Derivative Calculations</li>
-	<li>Arc Length Calculations</li>
-	<li>Segmentation Functions</li>
-	<li>Subdivison Algorithm</li>
-	<li>Lookup Table Generation</li>
-	<li>Path Description to Normalized SwiftUI Shape Converter</li>
-	<li><strong>SwiftUI Path Editor GUI</strong></li>
-	</ul>
-
-<p>
-	Try out bez today by downloading the <a href="https://apps.apple.com/us/app/bez-editor/id1508764103">bez editor</a> app available on iOS 13.4 and greater. Quickly create and export your masterpeice into a SwiftUI Shape.
-</p>
-<div class="app-preview">
-	<a href="https://apps.apple.com/us/app/bez-editor/id1508764103">
-		<img alt="bez editor preview gif" class="app-preview" src="/assets/bezeditorPreview.gif">
-		</a>
-	</div>
-</div>
-
-<div class="project-logo">
-		<a href="https://github.com/kieranb662/Color-Kit">
-		<img class="project-logo" src="Logos/ColorKitLogo.svg" alt="Color kit logo"  >
-		</a>
-
-<p>
-			<a href="https://github.com/kieranb662/Color-Kit">Color Kit</a>
-			 is a brand new SwiftUI library with the goal of providing all the essential building blocks to make the most <em>epic</em> color picking experience. Built with the developer in mind <strong>Color Kit</strong> has a simple API while still retaining the infinitely customizable components you need!
-			 </p>
-			 </div>
-
-<div class="project-logo">
-		<a href="https://github.com/kieranb662/Sliders">
-		<img class="project-logo" src="Logos/SlidersLogo.svg" alt="Sliders logo">
-		</a>
-
-<p>
-			<a href="https://github.com/kieranb662/Sliders">Sliders</a> is a compilation of all my stylable drag based SwiftUI components. It provides a variety of unique controls as well as an enhanced version of the normal <code>Slider</code> called an <code>LSlider</code>.
-</p>
-</div>
-
-<div class="project-logo">
-		<a href="https://github.com/kieranb662/Shapes">
-		<img class="project-logo" src="Logos/ShapesLogo.svg" alt="Shapes logo">
-		</a>
-
-<p>
-
-			Commonly used shapes for SwiftUI, some I found on the web <a href="https://swiftui-lab.com">swiftui-lab</a> and <a href="https://www.objc.io/blog/2019/12/16/drawing-trees">objc.io</a>, others I made myself. I hope to create community based repo for cool animated shapes, paths, etc. If you would like to submit some of your own shapes just make a pull request and I will try to approve it ASAP. If you want to try out this package just clone the <a href="https://github.com/kieranb662/Shapes-Examples">example project</a>
-</p>
-</div>
-		<hr class="single">
 
 </section>
 

@@ -5,5 +5,7 @@ permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-midnight
 sass:
     sass_dir: _sass
+collections: 
+  - projects
 plugins:
   - jekyll-sitemap
