@@ -102,7 +102,6 @@ Works with multiple selections simultaneously or single selections.
 
 ```swift
 func replaceSelected(buffer: XCSourceTextBuffer, formatter: @escaping (Selection) -> [String?]) {
-
     // 1. Get all lines and selected text from buffer
     guard let lines = buffer.lines as? [String] else { return }
     guard let selections = buffer.selections as? [XCSourceTextRange] else { return }
@@ -110,25 +109,21 @@ func replaceSelected(buffer: XCSourceTextBuffer, formatter: @escaping (Selection
     var documentOffset = 0
     // contains all replacement data for the selection plus the difference between the number of unformatted lines and formatted lines.
     var replacements = [(diff: Int, selected: Selection)]()
-
     // 2. For every selection create arrays of replacement data.
     // This loop implies that all selections should be treated individually when performing replacements.
     for selection in selections {
         // The selected text data prior to formatting.
         var unformatted = Selection()
-
         // A. Creating the unformatted selection array.
         for (index, r) in lines.getRanges(textRange: selection).enumerated() {
             let line = lines[selection.start.line+index]
             let selected = line[r]
             unformatted.append((selection.start.line+index, r, String(selected)))
         }
-
         // Empty formatted array, and 0 current value.
         var formatted = Selection()
         var current = 0
         let startLine = unformatted.first?.line
-
         // B. Format and append textData to formatted
         // if the current line count is greater than or equal the number of unformatted lines
         // then append new data for the line number and range.
@@ -141,7 +136,6 @@ func replaceSelected(buffer: XCSourceTextBuffer, formatter: @escaping (Selection
         // append the selection replacement data to replacements.
         replacements.append((formatted.count - unformatted.count, formatted))
     }
-
     // 3. Update the buffer with the replacement data.
     //    Makes adjustments by adding or removing lines at
     //    required indices.
@@ -168,7 +162,6 @@ func replaceSelected(buffer: XCSourceTextBuffer, formatter: @escaping (Selection
         // update the offset to account for changes.
         documentOffset += diff
     }
-
 }
 ```
 
@@ -195,7 +188,6 @@ lower -> upper
 ``` swift
 func caseFlip(_ input: Selection) -> [String?] {
     var replacements = [String?]()
-
     for text in input {
         var replacement: String = ""
         // For every character in the string check if upper or lower case then flip them upper -> lower and lower -> upper.
@@ -224,7 +216,6 @@ but one outputs the array in a single line while the other creates multiple line
 ``` swift
 func CSVtoArray(_ input: Selection) -> [String?] {
     var replacement = "let <# name #> = ["
-
     for line in input {
         line.text.split(separator: ",")
             .filter { !$0.isEmpty }
@@ -243,7 +234,6 @@ func CSVtoArray(_ input: Selection) -> [String?] {
 func verticalCSVToArray(_ input: Selection) -> [String?] {
     let heading = "let <# name #> = ["
     var replacements = [heading]
-
     for line in input {
         line.text.split(separator: ",")
             .filter { !$0.isEmpty }
@@ -251,12 +241,10 @@ func verticalCSVToArray(_ input: Selection) -> [String?] {
                 if !($0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) {
                     replacements.append("\"\($0.trimmingCharacters(in: .whitespaces))\",")
                 }
-
         }
     }
     replacements[replacements.count-1] = String(replacements[replacements.count-1].dropLast())
     replacements.append("]")
-
     return replacements
 }
 ```
