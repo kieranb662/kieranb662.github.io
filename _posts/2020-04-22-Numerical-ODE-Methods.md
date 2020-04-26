@@ -228,4 +228,4 @@ enum ODEScheme: Int, CaseIterable, Identifiable, Hashable {
 
 ## Link
 
-[Numerical ODE Shemes](https://gist.github.com/kieranb662/5d9d787e52bc1518d22fcb6f8c3fc4d6)
+[Numerical ODE Schemes](https://gist.github.com/kieranb662/5d9d787e52bc1518d22fcb6f8c3fc4d6)
