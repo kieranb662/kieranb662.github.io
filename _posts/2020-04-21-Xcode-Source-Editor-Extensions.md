@@ -1,5 +1,5 @@
 ---
-title: Creating Development Tools With Xcode Source Editor Extensions
+title: Xcode Source Editor
 description: A brief introduction to and implementation of various source editor tools in Xcode.
 keywords: Swift, Xcode, Strings, Source, Editor
 logo: /assets/postLogos/Xcode-Source-Editor.png
