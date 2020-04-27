@@ -217,6 +217,10 @@ height: auto;
 
 
 div.post {
+* {
+padding-top: 3px;
+padding-bottom: 3px;
+}
 display: block;
 max-width: 800px;
 margin-left: auto;
